@@ -143,7 +143,7 @@ static const Arg tagexec[] = { /* spawn application when tag is middle-clicked *
 };
 
 static const Key keys[] = {
-	/* modifier                   key        function        argument */
+	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
