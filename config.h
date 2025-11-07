@@ -39,8 +39,8 @@ static const int showstatus         = 1;        /* 0 means no status bar */
 static const int showfloating       = 0;        /* 0 means no floating indicator */
 static int topbar                   = 1;        /* 0 means bottom bar */
 
-static char dmenufont[]             = "monospace:size=10";
-static const char *fonts[]          = { "monospace:size=10", "Hack Nerd Font Mono:size=16", "NotoColorEmoji:pixelsize=14:antialias=true:autohint=true"  };
+static char dmenufont[]             = "monospace:size=14";
+static const char *fonts[]          = { "monospace:size=14", "Hack Nerd Font Mono:size=26", "NotoColorEmoji:size=16:antialias=true:autohint=true"  };
 
 /* default colors used if xrdb is not loaded */
 static char normbgcolor[]           = "#2e3440";
@@ -64,8 +64,8 @@ static char *colors[][3] = {
 
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-// static const char *tags[] = { "󰎤", "󰎧", "󰎪", "󰎭", "󰎱", "󰎳", "󰎶", "󰎹", "󰎼" };
+//static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "󰎤", "󰎧", "󰎪", "󰎭", "󰎱", "󰎳", "󰎶", "󰎹", "󰎼" };
 
 
 static const Rule rules[] = {
@@ -121,7 +121,7 @@ static const Layout layouts[] = { /* alt glyphs: 󱡗 󱏋 */
 #define GTKCMD(cmd) { .v = (const char*[]){ "/usr/bin/gtk-launch", cmd, NULL } }
 
 #define STATUSBAR "dwmblocks"
-#define BROWSER "qutebrowser"
+#define BROWSER "librewolf"
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
